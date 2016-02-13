@@ -26,7 +26,7 @@ public class MediaPicker extends CordovaPlugin {
 
     private static final int REQUEST_PICK_AUDIO = 1;
 
-    private static final List<String> SUPPORTED_EXTENSION = Arrays.asList("mp3", "ogg", "wav", "m4a");
+    private static final List<String> SUPPORTED_EXTENSION = Arrays.asList("mp3", "ogg", "wav", "m4a", "amr", "aac", "3gp", "mkv", "flac");
 
     private CallbackContext mCallbackContext;
 
@@ -87,6 +87,16 @@ public class MediaPicker extends CordovaPlugin {
                 extension = "wav";
             } else if (type.equals("audio/ogg")) {
                 extension = "ogg";
+            } else if (type.equals("audio/amr")) {
+                extension = "amr";
+            } else if (type.equals("audio/aac")) {
+                extension = "aac";
+            } else if (type.equals("audio/3gpp")) {
+                extension = "3gp";
+            } else if (type.equals("audio/x-matroska")) {
+                extension = "mkv";
+            } else if (type.equals("audio/flac") || type.equals("audio/x-flac")) {
+                extension = "flac";
             }
         } else {
             String filePath = uri.toString();
