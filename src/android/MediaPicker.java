@@ -9,6 +9,7 @@ import android.content.Intent;
 import android.net.Uri;
 import android.content.ContentResolver;
 import android.media.MediaMetadataRetriever;
+import android.util.Base64;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -56,7 +57,8 @@ public class MediaPicker extends CordovaPlugin {
                     Uri uri = intent.getData();
                     String extension = getUriExtension(uri);
                     if (extension != null) {
-                        String destPath = cordova.getActivity().getFilesDir() + "/track." + extension;
+                        String fileName = "AUDIO_" + Base64.encodeToString(intent.getData().getPath().getBytes(), Base64.URL_SAFE);
+                        String destPath = cordova.getActivity().getFilesDir() + "/" + fileName + "." + extension;
                         if (copyUriToPath(uri, destPath)) {
                             JSONObject mediaInfo = getMediaInfoFromPath(destPath);
                             mCallbackContext.sendPluginResult(new PluginResult(PluginResult.Status.OK, mediaInfo));
@@ -172,7 +174,7 @@ public class MediaPicker extends CordovaPlugin {
             if (art == null) {
                 image = "No Image";
             } else {
-                image = Base64.encodeBytes(art);
+                image = Base64.encodeToString(art, Base64.DEFAULT);
             }
         } catch (Exception e) {
             e.printStackTrace();
