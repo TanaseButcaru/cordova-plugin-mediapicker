@@ -1,3 +1,11 @@
+# 0.0.1-unofficial-2
+
+Release notes:
+
+ *  Changed cordova package id to ``cordova-plugin-mediapicker``
+ *  [12c273c](https://github.com/TanaseButcaru/cordova-plugin-mediapicker-unofficial/commit/12c273cf48cf43c330358129516738ab42041e8d): Android / set unique filename for selected saved file
+ *  [e22f230](https://github.com/TanaseButcaru/cordova-plugin-mediapicker-unofficial/commit/e22f230128246d98c0c1faf843565487f1c381e7): Android / add support for other mime types
+
 # 0.0.1-unofficial-1
 
 Initial unofficial release.  
