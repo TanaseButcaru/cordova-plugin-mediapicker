@@ -1,4 +1,23 @@
 
+UNOFFICIAL VERSION NOTICE
+-------------------------
+My unofficial releases are synced against upstream/master branch.  
+Also, this releases are tested & contains the latest changes from upstream AND can contain new features/fixes that are not yet merged or released in the upstream/master branch.
+
+
+You can install this plugin as any other cordova plugin, via CLI, using its name or git url:  
+``cordova plugin add cordova-plugin-mediapicker-unofficial``  
+``cordova plugin add https://github.com/TanaseButcaru/cordova-plugin-mediapicker-unofficial.git``  
+*You have to remove the original plugin, before installing this one.*
+
+
+Consider this branch & its releases as a bleeding-edge version.  
+Contributions are welcomed!  
+**Enjoy!**
+
+-------------------------
+
+
 # IMPORTANT NOTE
 
 This is untested version of the original plugin https://github.com/an-rahulpandey/ios-audio-picker. In this version we have added the Android Support (thanks to [@kukukk](https://github.com/kukukk)). Please test it and repot the issues. If possible please send a pull request for the fixes. Thanks for your support.
