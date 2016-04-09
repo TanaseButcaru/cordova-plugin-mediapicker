@@ -1,3 +1,9 @@
+# 0.0.2-unofficial-1
+
+Release notes:
+
+ * [a5cf206](https://github.com/TanaseButcaru/cordova-plugin-mediapicker-unofficial/commit/a5cf20674bdee794a7fec58fd65eee67ad735a69) Sync to upstream/master
+
 # 0.0.1-unofficial-3
 
 Bump version number for npmjs.
