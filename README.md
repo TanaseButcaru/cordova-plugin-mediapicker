@@ -1,3 +1,4 @@
+# WARNING: This project is no longer maintained.
 
 UNOFFICIAL VERSION NOTICE
 -------------------------
